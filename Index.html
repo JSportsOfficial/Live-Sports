@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>m3u8 Player</title>
+
+    <!-- Include Video.js CSS -->
+
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.16.0/video-js.min.css" />
+
+    <style>
+
+      body {
+
+       background-color:#3d7c47;
+
+        margin: 0;
+
+        padding: 0;
+
+      }
+
+h1{
+
+  position: center;
+
+}
+
+      #video-player {
+
+        margin-top: 9%;
+
+        width: 100%;
+
+        height: 0;
+
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+
+      }
+
+      #playlist-container {
+
+        overflow-x: auto;
+
+        white-space: nowrap;
+
+        position:  relative;
+
+        background-color: #0f2862;
+
+      }
+
+      #playlist {
+
+        list-style-type: none;
+
+        padding: 0;
+
+        display: flex;
+
+        justify-content: center;
+
+        position: relative;
+
+      }
+
+      #playlist:before,
+
+      #playlist:after {
+
+        content: "";
+
+        position: absolute;
+
+        top: 0;
+
+        bottom: 0;
+
+        width: 50px;
+
+        background-color: #e6r3e7;
+
+        z-index: -1;
+
+      }
+
+      #playlist:before {
+
+        left: 0;
+
+      }
+
+      #playlist:after {
+
+        right: 0;
+
+      }
+
+      #playlist li {
+
+        margin: 5px;
+
+      }
+
+      #playlist li a {
+
+        text-decoration: none;
+
+        padding: 5px;
+
+        border: 1px solid #ccc;
+
+        background-color: #f9f6f9;
+
+        display: flex;
+
+        align-items: center;
+
+      }
+
+      #playlist li a img {
+
+        width: 100px;
+
+        height: auto;
+
+        margin-right: 5px;
+
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>welcome to Js Sports</h1>
+
+    <video id="video-player" class="video-js vjs-default-skin" controls autoplay></video>
+
+    <div id="playlist-container">
+
+      <ul id="playlist"></ul>
+
+    </div>
+
+    <!-- Include Video.js script -->
+
+    <script src="https://vjs.zencdn.net/7.16.0/video.min.js"></script>
+
+    <script>
+
+      const videoPlayer = videojs("video-player");
+
+      const playlist = document.getElementById("playlist");
+
+      const m3u8Links = [
+
+        { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },
+
+          { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },    { url: "https://live.tsports.com/live/tsports_live_720/index.m3u8", image: "1.png" },
+
+        // Add more m3u8 links with corresponding image URLs here
+
+      ];
+
+      function playVideo(url) {
+
+        videoPlayer.src({
+
+          src: url,
+
+          type: "application/x-mpegURL",
+
+        });
+
+        videoPlayer.play();
+
+      }
+
+      m3u8Links.forEach((link, index) => {
+
+        const listItem = document.createElement("li");
+
+        const linkElement = document.createElement("a");
+
+        const imageElement = document.createElement("img");
+
+        linkElement.href = "#";
+
+        linkElement.addEventListener("click", () => {
+
+          playVideo(link.url);
+
+        });
+
+        imageElement.src = link.image;
+
+        linkElement.appendChild(imageElement);
+
+        listItem.appendChild(linkElement);
+
+        playlist.appendChild(listItem);
+
+        // Autoplay the first link
+
+        if (index === 0) {
+
+          playVideo(link.url);
+
+        }
+
+      });
+
+    </script>
+
+    <a href="facebook.com/vipjihadofficial">Facebook</a>
+
+  </body>
+
+</html>
+
