@@ -84,6 +84,7 @@
 }
 
 li{
+  margin-left:15px;
   display: inline-block;
   color: #131313;
   text-align: center;
@@ -116,8 +117,8 @@ a:hover {
   outline: none;
   border-radius: 4px;
   background: #833ab4;
-  background: -webkit-linear-gradient(to right, #8efac8, #8ebffa, #404be6);
-  background: linear-gradient(to right, #8efac8, #8ebffa, #404be6);
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #fcb045);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   color: #fff;
   transition: all 0.3s ease;
 }
