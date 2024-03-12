@@ -94,8 +94,8 @@ li{
   outline: none;
   border-radius: 4px;
   background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fff, #fff, #fff);
-  background: linear-gradient(to right, #fff, #fff, #fff);
+  background: -webkit-linear-gradient(to right, #cdfc45, #1ce4e2, #4a85ff);
+  background: linear-gradient(to right, #cdfc45, #1ce4e2, #4a85ff);
   color: #fff;
   transition: all 0.3s ease;
 }
