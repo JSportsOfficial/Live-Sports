@@ -521,7 +521,9 @@
 .services__card:nth-child(3) {
   background-image: url(./img/pic.jpg)
 }
-
+.services__card:nth-child(4) {
+  background-image: url(./img/pic.jpg)
+}
 .services__card h2 {
   text-align: center;
 }
