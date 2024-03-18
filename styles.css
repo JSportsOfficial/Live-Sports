@@ -192,8 +192,17 @@
 
 /* Hero Section */
 .hero {
-  background-image: url(https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/IPL/ipl.png)
-  
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/IPL/ipl.png");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero__container {
