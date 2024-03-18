@@ -510,24 +510,43 @@
 
 .services__card {
   margin: 10px;
-  height: 425px;
-  width: 300px;
+  height: 325px;
+  width: 400px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
+  background-size:cover;
   background-image: url(https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/img/football.jpg)
   
 }
 
 .services__card:nth-child(2) {
-  background-image: url(https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/img/cricket.jpg)
   
+  background-image: url(https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/img/cricket.jpg)
+  margin: 10px;
+  height: 325px;
+  width: 400px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-size:cover;
 }
 
 .services__card:nth-child(3) {
   background-image: url(./img/pic.jpg)
+  margin: 10px;
+  height: 325px;
+  width: 400px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-size:cover;
 }
 .services__card:nth-child(4) {
   background-image: url(./img/pic.jpg)
