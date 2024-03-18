@@ -517,12 +517,12 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: url()
+  background-image: url(https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/img/football.jpg)
   
 }
 
 .services__card:nth-child(2) {
-  background-image: url(./img/pic.jpg)
+  background-image: url(https://raw.githubusercontent.com/JSportsOfficial/Live-Sports/main/img/cricket.jpg)
   
 }
 
